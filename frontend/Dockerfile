@@ -3,7 +3,7 @@ FROM node:19-alpine3.15 AS build
 
 WORKDIR /usr/src/frontend
 
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 
 COPY . .
