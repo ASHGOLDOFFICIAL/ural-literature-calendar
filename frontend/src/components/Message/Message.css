@@ -1,0 +1,15 @@
+.Message--success {
+  background-color: var(--success-secondary);
+  border: solid 0.2rem var(--success-primary);
+  border-radius: 1.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.Message--error {
+  background-color: var(--error-secondary);
+  border: solid 0.2rem var(--error-primary);
+  border-radius: 1.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}

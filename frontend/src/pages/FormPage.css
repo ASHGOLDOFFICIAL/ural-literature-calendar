@@ -1,0 +1,8 @@
+.Form__input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  outline: 0.15rem solid var(--border);
+  resize: block;
+}

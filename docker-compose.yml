@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+
+  database:
+    image: postgres:15-bullseye
+    container_name: database
+    environment:
+      POSTGRES_USER: ural_literature_calendar
+      POSTGRES_PASSWORD: vW6%88wgbA6TZ*rZ
+      POSTGRES_DB: ural_literature_calendar
+    volumes:
+      - .database/data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: backend
+    command: gunicorn config.wsgi --bind 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    volumes:
+      - ./media:/usr/src/backend/media
+    depends_on:
+      - database
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - 80:80
+    volumes:
+      - ./backend/src/static:/var/www/backend/static:ro
+      - ./media:/var/www/media:ro
+    depends_on:
+      - backend

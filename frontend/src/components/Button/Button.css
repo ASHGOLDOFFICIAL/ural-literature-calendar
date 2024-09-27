@@ -1,0 +1,13 @@
+.Button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  background-color: var(--accent-primary);
+  color: var(--text-invert);
+}
+
+.Button:hover {
+  background-color: var(--accent-secondary);
+  color: var(--text-invert);
+}

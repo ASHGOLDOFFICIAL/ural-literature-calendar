@@ -1,0 +1,16 @@
+.Block {
+  color: var(--text-primary);
+  background: var(--background-secondary);
+  box-shadow: var(--shadow-big);
+  border-radius: 1em;
+  line-height: 1.5;
+  padding: 1.5em;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.Block__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}

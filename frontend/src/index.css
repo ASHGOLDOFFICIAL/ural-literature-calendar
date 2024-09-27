@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+.container {
+  max-width: min(1150px, 90%);
+  margin: 0 auto;
+}
+
+.block__subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.block__info-btn {
+  border-radius: 50%;
+  float: right;
+  margin-left: 1rem;
+}
+
+.block__p {
+  margin-bottom: 1em;
+}
+
+.icon {
+  font-family: 'Material Symbols';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf)
+    format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf)
+    format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Material Symbols';
+  src: url(./assets/fonts/material-symbols/MaterialSymbolsRounded.ttf)
+    format('truetype');
+  font-style: normal;
+}

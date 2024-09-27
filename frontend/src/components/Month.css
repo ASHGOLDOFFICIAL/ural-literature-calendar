@@ -1,0 +1,69 @@
+.Month {
+  background: var(--background-secondary);
+  box-shadow: var(--shadow-big);
+  border-radius: 1em;
+  line-height: 1.5;
+  padding: 1.5em;
+  width: 100%;
+}
+
+.Month__name {
+  letter-spacing: 0.1rem;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+.Month__name > a,
+.Month__item > a {
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Month__grid {
+  display: grid;
+  grid-template-columns: repeat(7, MinMax(1.5rem, auto));
+  gap: 0.5rem;
+}
+
+.Month__item,
+.Month__item--empty,
+.Month__item--weekday {
+  font-size: 1.25em;
+  text-align: center;
+  aspect-ratio: 1;
+}
+
+.Month__item {
+  background: var(--background-primary);
+  border-radius: 0.5em;
+  transition: background-color 0.2s ease-in;
+}
+
+.Month__item:hover,
+.Month__item:active {
+  background: var(--background-tertiary);
+}
+
+.Month__item:active {
+  font-weight: 600;
+}
+
+.Month__item--weekday {
+  height: auto;
+  aspect-ratio: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .Month__name {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .Month__item,
+  .Month__item--empty,
+  .Month__item--weekday {
+    font-size: 1rem;
+  }
+}

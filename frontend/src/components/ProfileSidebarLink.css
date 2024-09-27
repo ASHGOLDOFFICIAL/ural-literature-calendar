@@ -1,0 +1,15 @@
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-link__avatar-thumb {
+  width: 4rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--border);
+}
+
+.profile-link__username {
+  font-weight: 600;
+}

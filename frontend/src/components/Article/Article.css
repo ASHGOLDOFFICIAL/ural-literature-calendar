@@ -1,0 +1,8 @@
+.Article__p {
+  text-indent: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Article__p:last-child {
+  margin-bottom: 0;
+}

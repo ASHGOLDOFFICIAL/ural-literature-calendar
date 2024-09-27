@@ -1,0 +1,34 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__info-block {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.profile__avatar {
+  width: 70%;
+  border: 0.3rem solid var(--border);
+  border-radius: 25%;
+}
+
+.profile__name {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__info-block {
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

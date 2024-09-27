@@ -1,0 +1,66 @@
+.InitialsAvatar {
+  background-color: #555555;
+  aspect-ratio: 1;
+}
+
+.InitialsAvatar__text {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+  font-size: 16px;
+  fill: #fff;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+/* Gradients were found at https://uigradients.com/ */
+
+.InitialsAvatar--ash {
+  background: linear-gradient(45deg, #606c88, #3f4c6b);
+}
+
+.InitialsAvatar--aubergine {
+  background: linear-gradient(45deg, #aa076b, #61045f);
+}
+
+.InitialsAvatar--blush {
+  background: linear-gradient(45deg, #b24592, #f15f79);
+}
+
+.InitialsAvatar--cherry {
+  background: linear-gradient(45deg, #eb3349, #f45c43);
+}
+
+.InitialsAvatar--crystal-clear {
+  background: linear-gradient(45deg, #159957, #155799);
+}
+
+.InitialsAvatar--juicy-orange {
+  background: linear-gradient(45deg, #ff8008, #ffc837);
+}
+
+.InitialsAvatar--mirage {
+  background: linear-gradient(45deg, #16222a, #3a6073);
+}
+
+.InitialsAvatar--mojito {
+  background: linear-gradient(45deg, #1d976c, #93f9b9);
+}
+
+.InitialsAvatar--namn {
+  background: linear-gradient(45deg, #a73737, #7a2828);
+}
+
+.InitialsAvatar--skyline {
+  background: linear-gradient(45deg, #1488cc, #2b32b2);
+}
+
+.InitialsAvatar--sulphur {
+  background: linear-gradient(45deg, #cac531, #f3f9a7);
+}
